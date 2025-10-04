@@ -1,0 +1,38 @@
+.background-image {
+    width: 100%;
+    height: 45vh;
+    background-image: url('../../assets/ferry-hero.jpg');
+    background-size: cover;
+    display: block;
+    margin-top: 10px;
+    background-position: center;
+}
+.cta-section{
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 50px 20px;
+}
+.cta-section h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #343a40;
+    margin: 0;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.cta-section .cta-button{
+    display: inline-block;
+    background-color: transparent;
+    color: #343a40;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 12px 28px;
+    border-radius: 5px;
+    border: 2px solid #343a40;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.cta-section .cta-button{
+    background-color: #343a40;
+    color: #ffffff;
+}

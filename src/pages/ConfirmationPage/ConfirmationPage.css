@@ -1,0 +1,141 @@
+.confirmation-container {
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: calc(100vh - 230px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.confirmation-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 70px;
+  color: #005A9C;
+}
+
+.booking-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.detail-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  border-top: 4px solid #005A9C;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.detail-card:last-child {
+  grid-column: 1 / -1;
+  max-width: 300px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #005A9C, #003366);
+  color: white;
+  border-top: 4px solid #28a745;
+  
+}
+
+.detail-card:last-child h3 {
+  color: white;
+  font-size: 18px;
+}
+
+.detail-card:last-child p {
+  color: white;
+}
+
+
+
+
+.detail-card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #005A9C;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detail-card p {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+  font-weight: 500;
+}
+
+.detail-card .amount {
+  font-size: 24px;
+  font-weight: bold;
+  color: #005A9C;
+}
+
+.detail-card:last-child .amount {
+  font-size: 28px;
+  color: white;
+}
+
+.print-ticket-btn {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  padding: 15px 25px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-bottom: 30px;
+}
+
+.print-ticket-btn:hover {
+  background: #218838;
+  transform: translateY(-2px);
+}
+
+
+.confirmation-container {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .booking-details {
+    grid-template-columns: 1fr;
+  }
+  
+  .confirmation-container {
+    padding: 20px;
+  }
+  
+  .print-ticket-btn {
+    width: 100%;
+  }
+
+  .detail-card:last-child {
+    max-width: 100%;
+  }
+}

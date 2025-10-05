@@ -1,3 +1,12 @@
-body{
-    margin: 0;
+
+@import url('https://cdn.jsdelivr.net/npm/geist@1.0.0/dist/geist.css');
+
+body {
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
 }

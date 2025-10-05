@@ -3,6 +3,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import RoutesPage from "./pages/RoutesPage/RoutesPage";
 import TerminalPage from "./pages/TerminalPage/TerminalPage";
 import './index.css'
+import BookingPage from "./pages/BookingPage/BookingPage";
 
 
 
@@ -12,8 +13,9 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/route" element={<RoutesPage/>} />
           <Route  path="/terminal" element={<TerminalPage/>} />
+          <Route path="/route" element={<RoutesPage/>} />
+          <Route path="/booking" element={<BookingPage/>} />
         </Routes>
       </Router>
     </>

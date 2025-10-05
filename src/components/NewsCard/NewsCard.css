@@ -1,6 +1,13 @@
 .news-container{
     padding: 40px;
     text-align: center;
+    background: #f8f9fa;
+}
+.latest-news {
+    font-size: 32px;
+    color: #0077b6;
+    margin-bottom: 30px;
+    font-weight: bold;
 }
 .news-cards{
     display: grid;
@@ -13,24 +20,222 @@
     padding: 15px;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     cursor: pointer;
+
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-left: 4px solid #0077b6;
 }
 .news-content:hover{
     transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 .news-content h2{
     font-size: 18px;
     margin-bottom: 10px;
     color: #0077b6;
+    line-height: 1.4;
 }
 .news-content p{
-    font-size: 14px;
+    font-size: 15px;
     color: #444;
     margin-bottom: 10px;
+
+
+    flex-grow: 1;
+    
 }
-.news-content a{
-    text-decoration: none;
+
+
+
+.news-meta {
+    margin-bottom: 15px;
+}
+
+.news-date-small {
+    font-size: 12px;
+    color: #666;
+    background: #f0f0f0;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.news-link{
+    background: none;
+    border: none;
     color: #0096c7;
     font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    padding: 0;
+    text-decoration: underline;
+    font-size: 14px;
+    align-self: center;
+}
+
+.news-link:hover{
+    color: #0077b6;
+}
+
+/* Modal Styles */
+.news-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.news-modal-content {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 700px;
+    width: 90%;
+    max-height: 85vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #666;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+}
+
+.modal-close-btn:hover {
+    background: #f0f0f0;
+    color: #333;
+}
+
+.modal-title {
+    color: #0077b6;
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 1.3;
+    padding-right: 50px;
+}
+
+.modal-meta {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+    flex-wrap: wrap;
+}
+
+.news-date {
+    color: #666;
+    font-size: 14px;
+    background: #f8f9fa;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+.news-author {
+    color: #0077b6;
+    font-size: 14px;
+    background: #e3f2fd;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.modal-body {
+    margin-bottom: 25px;
+}
+
+.modal-full-description {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.modal-full-description p {
+    margin-bottom: 15px;
+}
+
+.modal-full-description img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.modal-footer {
+    text-align: center;
+    padding-top: 25px;
+    border-top: 2px solid #e0e0e0;
+}
+
+.modal-close-button {
+    background: #0077b6;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.modal-close-button:hover {
+    background: #005a8c;
+    transform: translateY(-1px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .news-container {
+        padding: 20px;
+    }
+    
+    .news-modal-content {
+        padding: 25px;
+        width: 95%;
+    }
+    
+    .modal-title {
+        font-size: 22px;
+        padding-right: 40px;
+    }
+    
+    .news-cards {
+        grid-template-columns: 1fr;
+        margin: 10px;
+        gap: 20px;
+    }
+    
+    .latest-news {
+        font-size: 28px;
+    }
+    
+    .modal-meta {
+        flex-direction: column;
+        gap: 10px;
+    }
 }

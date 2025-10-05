@@ -12,7 +12,7 @@ function HomePage() {
   const navigate = useNavigate();
 
   const handleTerminalSelect = (terminal) => {
-    navigate('/terminal');
+    navigate('/terminal', {state : {selectedTerminal: terminal} });
   }
 
   return (

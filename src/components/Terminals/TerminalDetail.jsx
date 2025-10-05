@@ -13,17 +13,20 @@ function TerminalDetail({terminal}) {
     return (
     <div className="terminal-detail">
       <h2>{terminal.name}</h2>
-      <p>{terminal.description}</p>
       <div
+        className="terminal-long-description"
         dangerouslySetInnerHTML={{ __html: terminal.long_description }}
       />
       <div className="map-container">
-        <iframe
-          src={terminal.mapLocation}
-          title="map"
-          allowFullScreen=""
-          loading="lazy"
-        ></iframe>
+        
+              <a
+                href={terminal.mapLocation}
+                target='_blank'
+                rel='noopener noreferrer'
+                className='map-btn'
+              >
+                View on Map
+              </a>
       </div>
     </div>
   );

@@ -3,18 +3,19 @@ import Navbar from '../../components/Navbar/Navbar'
 import TerminalList from '../../components/Terminals/TerminalList'
 import TerminalDetail from '../../components/Terminals/TerminalDetail';
 import './TerminalPage.css'
+import Footer from '../../components/Footer/Footer';
 
 function TerminalPage() {
 
   const [terminals,setTerminals] = useState([]);
-  const [selectedTerminal, setSelectedTerminals] = useState(null)
+  const [selectedTerminal, setSelectedTerminal] = useState(null)
 
   useEffect(() =>{
     fetch("https://raw.githubusercontent.com/e3ob/wm-test/refs/heads/main/terminal.json")
     .then((response) => response.json())
     .then((data) => {
       setTerminals(data.data);
-      setSelectedTerminals(data.data[0]);
+      setSelectedTerminal(data.data[0]);
     })
     .catch((error) => console.error("Error fetching data:",error));
   },[])
@@ -24,12 +25,12 @@ function TerminalPage() {
         <Navbar/>
         <div className="main-container">
           <TerminalList
-            terminals={terminals}
-            onSelect={setSelectedTerminals}
+            onSelect={setSelectedTerminal}
             selectedId={selectedTerminal?.id}
           />
           <TerminalDetail terminal={selectedTerminal} />
         </div>
+        <Footer />
         
     </>
   )

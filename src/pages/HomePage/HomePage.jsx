@@ -3,11 +3,17 @@ import Navbar from '../../components/Navbar/Navbar'
 import NewsCard from '../../components/NewsCard/NewsCard'
 import './HomePage.css'
 import {useNavigate} from 'react-router-dom'
+import TerminalList from '../../components/Terminals/TerminalList'
+import Footer from '../../components/Footer/Footer'
 
 
 function HomePage() {
 
   const navigate = useNavigate();
+
+  const handleTerminalSelect = (terminal) => {
+    navigate('/terminal');
+  }
 
   return (
     <>
@@ -18,6 +24,8 @@ function HomePage() {
           <button className='cta-button' onClick={() => navigate('/route')}>Explore Routes</button>
         </div>
         <NewsCard />
+        <TerminalList onSelect={handleTerminalSelect} />
+        <Footer />
     </>
   )
 }

@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import RoutesPage from "./pages/RoutesPage/RoutesPage";
 import TerminalPage from "./pages/TerminalPage/TerminalPage";
+import './index.css'
 
 
 

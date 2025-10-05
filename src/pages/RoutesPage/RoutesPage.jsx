@@ -9,11 +9,21 @@ function RoutesPage() {
   const navigate = useNavigate();
 
   const routes = [
-    { id: 1, name: "Vytilla → Fort Kochi", duration: "23 mins" },
-    { id: 2, name: "Kakkanad → Vytilla → Vypin", duration: "28 mins" },
-    { id: 3, name: "Vytilla → Bolgatty", duration: "15 mins" },
-    { id: 4, name: "High Court → Vypin", duration: "20 mins" }
+    { id: 1, name: "Vytilla → Fort Kochi", source: "Vytilla", destination: "Fort Kochi", duration: "23 mins" },
+    { id: 2, name: "Kakkanad → Vytilla", source: "Kakkanad", destination: "Vypin", duration: "28 mins" },
+    { id: 3, name: "Vytilla → Bolgatty", source: "Vytilla", destination: "Bolgatty", duration: "15 mins" },
+    { id: 4, name: "High Court → Vypin", source: "High Court", destination: "Vypin", duration: "20 mins" }
   ]
+
+  const handleBookNow = (route) => {
+    navigate('/booking', { 
+      state: { 
+        route: route.name,
+        source: route.source,
+        destination: route.destination
+      } 
+    })
+  }
 
   return (
     <>
@@ -31,7 +41,7 @@ function RoutesPage() {
               </div>
               <button
                 className='book-btn'
-                onClick={() => navigate('/booking', {state : { route : route.name} })}
+                onClick={() => handleBookNow(route)}
               >
                 Book Now
               </button>

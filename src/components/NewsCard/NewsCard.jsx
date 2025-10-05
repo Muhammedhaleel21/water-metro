@@ -61,7 +61,7 @@ function NewsCard() {
         </div>
 
 
-        {/* Modal for full news content */}
+        
         {showModal && selectedNews && (
             <div className="news-modal-overlay" onClick={closeModal}>
                 <div className="news-modal-content" onClick={(e) => e.stopPropagation()}>
@@ -80,7 +80,7 @@ function NewsCard() {
                     </div>
 
                     <div className="modal-body">
-                        {/* Render HTML content safely */}
+                        
                         <div 
                             className="modal-full-description"
                             dangerouslySetInnerHTML={createMarkup(selectedNews.description)}

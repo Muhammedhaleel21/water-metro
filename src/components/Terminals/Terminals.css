@@ -15,11 +15,7 @@
     width: max-content;
     animation: scroll 40s linear infinite;
 }
-/*
-.terminal-cards-wrapper:hover .terminal-cards {
-  animation-play-state: paused;
-}
-*/
+
 
 @keyframes scroll {
   0% {

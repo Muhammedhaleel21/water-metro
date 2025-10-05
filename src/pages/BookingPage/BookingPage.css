@@ -96,7 +96,7 @@
   background: #004080;
 }
 
-/* Responsive design */
+
 @media (max-width: 768px) {
   .form-row {
     flex-direction: column;

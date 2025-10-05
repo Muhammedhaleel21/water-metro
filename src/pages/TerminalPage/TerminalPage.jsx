@@ -8,7 +8,7 @@ import { useLocation } from 'react-router-dom';
 
 function TerminalPage() {
 
-  const [terminals,setTerminals] = useState([]);
+  
   const [selectedTerminal, setSelectedTerminal] = useState(null)
   const location = useLocation();
 
@@ -16,7 +16,6 @@ function TerminalPage() {
     fetch("https://raw.githubusercontent.com/e3ob/wm-test/refs/heads/main/terminal.json")
     .then((response) => response.json())
     .then((data) => {
-      setTerminals(data.data);
       
       const terminalFromState = location.state?.selectedTerminal;
 

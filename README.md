@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+🌊 Kochi Water Metro
+A modern, responsive web application for exploring Kochi Water Metro terminals, routes, and booking journeys.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+✨ Features
 
-## Available Scripts
+Explore Terminals: See all water metro terminals with details and locations
 
-In the project directory, you can run:
+Check Routes: View available routes with travel times
 
-### `npm start`
+Book Tickets: Easy booking system with real-time pricing
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Read News: Stay updated with latest Water Metro news
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+📱 Pages
 
-### `npm test`
+Home: Overview with terminals and news
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Terminals: Detailed terminal information
 
-### `npm run build`
+Routes: Available routes and booking
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Booking: Ticket reservation system
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Confirmation: Booking summary
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🛠️ Built With
 
-### `npm run eject`
+React.js
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+React Router
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+CSS3
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Netlify (Hosting)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+📄 License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+🙏 Acknowledgments
 
-### Code Splitting
+Kochi Water Metro for inspiration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

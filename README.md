@@ -1,4 +1,5 @@
 🌊 Kochi Water Metro
+
 A modern, responsive web application for exploring Kochi Water Metro terminals, routes, and booking journeys.
 
 ✨ Features
@@ -32,14 +33,3 @@ React Router
 CSS3
 
 Netlify (Hosting)
-
-
-📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-🙏 Acknowledgments
-
-Kochi Water Metro for inspiration
-
-
